@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="es-AR" class="fonts-pending">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>La Antonella Eventos · Salón de fiestas en Alta Córdoba</title>
+  <meta name="description" content="Salón de eventos en el ex Cine Astral de Alta Córdoba. Fiestas de 15, casamientos, egresados y cumpleaños para 120 a 500 invitados. Consultá tu fecha por WhatsApp.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0c0a0d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="La Antonella Eventos · Un salón con historia">
+  <meta property="og:description" content="Fue cine. Hoy es tu noche. Fiestas de 15, casamientos, egresados y cumpleaños en Alta Córdoba.">
+  <meta property="og:image" content="/og.jpg">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/imbue-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/mona-sans-latin-wdth.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/video/pantalla-sala.webp" as="image" fetchpriority="high">
+  <script>
+    // Los títulos esperan a la tipografía real: nunca se ve la de reemplazo.
+    (function () {
+      var html = document.documentElement;
+      html.classList.add('js');
+      // Si el script principal fallara, el hero igual se muestra
+      setTimeout(function () { var h = document.querySelector('.hero'); if (h) h.classList.add('is-listo'); }, 3500);
+      var ready = function () { html.classList.remove('fonts-pending'); html.classList.add('fonts-ready'); };
+      var timer = setTimeout(ready, 2500);
+      if (document.fonts && document.fonts.load) {
+        Promise.all([
+          document.fonts.load('300 1em "Imbue"'),
+          document.fonts.load('400 1em "Mona Sans"'),
+        ]).then(function () { clearTimeout(timer); ready(); }, ready);
+      } else { ready(); }
+    })();
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <!--brand-->
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera" data-cabecera>
+    <a class="cabecera__marca" href="#inicio" aria-label="La Antonella Eventos, inicio">
+      <svg class="logo-script" viewBox="0 0 2230 502" aria-hidden="true"><use href="#logo-script" width="2230" height="502"></use></svg>
+    </a>
+    <nav class="cabecera__nav" aria-label="Secciones">
+      <a href="#eventos">Eventos</a>
+      <a href="#salon">El salón</a>
+      <a href="#gastronomia">Gastronomía</a>
+      <a href="#galeria">Galería</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <a class="btn btn--linea cabecera__cta" href="#consulta">Consultar fecha</a>
+    <button class="cabecera__menu" type="button" aria-expanded="false" aria-controls="menu" data-menu-abrir>
+      <span class="sr-only">Abrir menú</span>
+      <span class="hamburguesa" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden data-menu>
+    <nav class="menu__nav" aria-label="Menú">
+      <a href="#eventos">Eventos</a>
+      <a href="#salon">El salón</a>
+      <a href="#ambientacion">Ambientación</a>
+      <a href="#gastronomia">Gastronomía</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <div class="menu__pie">
+      <a class="btn btn--oro" href="#consulta">Consultar fecha</a>
+      <a class="menu__dato" href="https://wa.me/5493513263356" target="_blank" rel="noopener">WhatsApp · 351 326-3356</a>
+      <a class="menu__dato" href="https://www.instagram.com/laantonellaeventos/" target="_blank" rel="noopener">Instagram · @laantonellaeventos</a>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <!-- ───────── Hero: tres pantallas ───────── -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="hero__pantallas" data-pantallas>
+        <figure class="pantalla" data-pantalla="sala">
+          <video muted playsinline loop preload="none" poster="/video/pantalla-sala.webp" aria-hidden="true"
+            data-src="/video/pantalla-sala.mp4" data-src-movil="/video/pantalla-movil.mp4"></video>
+          <figcaption class="pantalla__rotulo" data-rotulo>La sala</figcaption>
+        </figure>
+        <figure class="pantalla" data-pantalla="brindis">
+          <video muted playsinline loop preload="none" poster="/video/pantalla-brindis.webp" aria-hidden="true"
+            data-src="/video/pantalla-brindis.mp4"></video>
+          <figcaption class="pantalla__rotulo">El brindis</figcaption>
+        </figure>
+        <figure class="pantalla" data-pantalla="pista">
+          <video muted playsinline loop preload="none" poster="/video/pantalla-pista.webp" aria-hidden="true"
+            data-src="/video/pantalla-pista.mp4"></video>
+          <figcaption class="pantalla__rotulo">La pista</figcaption>
+        </figure>
+      </div>
+
+      <div class="hero__contenido">
+        <div class="hero__titular">
+          <p class="volanta hero__volanta">Salón de eventos en Alta Córdoba</p>
+          <h1 class="hero__titulo" id="hero-titulo">
+            <span class="linea"><span>Fue cine.</span></span>
+            <span class="linea"><span>Hoy es <em>tu noche.</em></span></span>
+          </h1>
+        </div>
+        <div class="hero__bajada">
+          <p>La Antonella funciona en el edificio del ex Cine Astral. Fiestas de 15, casamientos, egresados y cumpleaños para 120 a 500 invitados, con todo resuelto en un solo lugar.</p>
+          <div class="hero__acciones">
+            <a class="btn btn--oro" href="#consulta">Consultar fecha</a>
+            <a class="btn btn--linea" href="#salon">Recorrer el salón</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="hero__pausa" type="button" data-pausa aria-pressed="false">
+        <span class="hero__pausa-icono" aria-hidden="true"></span>
+        <span data-pausa-texto>Pausar video</span>
+      </button>
+    </section>
+
+    <!-- ───────── Cartelera ───────── -->
+    <section class="cartelera seccion" id="eventos" aria-labelledby="cartelera-titulo">
+      <div class="encabezado">
+        <div>
+          <p class="volanta">En cartelera</p>
+          <h2 class="display" id="cartelera-titulo" data-revelar>¿Qué vas a celebrar?</h2>
+        </div>
+        <div class="encabezado__lado">
+          <p class="bajada">Cinco formas de llenar la sala. Elegí la tuya y consultá la fecha en un minuto.</p>
+        </div>
+      </div>
+
+      <ul class="cartelera__grilla" aria-label="Tipos de evento">
+        <li class="afiche">
+          <a class="afiche__marco" href="#consulta" data-evento="15 años">
+            <img data-img="q-espalda" data-sizes="(min-width: 1200px) 19vw, (min-width: 640px) 31vw, 92vw" alt="Quinceañera de espaldas, con corona y vestido azul, frente a sus invitados en la sala.">
+            <span class="afiche__texto">
+              <span class="afiche__pre">La Antonella presenta</span>
+              <span class="afiche__titulo">Quince</span>
+            </span>
+          </a>
+          <p class="afiche__creditos">Entrada triunfal · Vals · Ceremonia de velas · Book de fotos · Robots LED · Mesa dulce y torta</p>
+          <a class="afiche__cta" href="#consulta" data-evento="15 años">Consultar fecha</a>
+        </li>
+        <li class="afiche">
+          <a class="afiche__marco" href="#consulta" data-evento="Casamiento">
+            <img data-img="b-hall" data-sizes="(min-width: 1200px) 19vw, (min-width: 640px) 31vw, 92vw" alt="Novia entrando del brazo de su padre al hall, bajo la cúpula y la araña de cristal.">
+            <span class="afiche__texto">
+              <span class="afiche__pre">La Antonella presenta</span>
+              <span class="afiche__titulo">Casamientos</span>
+            </span>
+          </a>
+          <p class="afiche__creditos">Civil en el salón · Recepción y brindis · Vals · Ramo · Pista · Fin de fiesta</p>
+          <a class="afiche__cta" href="#consulta" data-evento="Casamiento">Consultar fecha</a>
+        </li>
+        <li class="afiche">
+          <a class="afiche__marco" href="#consulta" data-evento="Egresados">
+            <img data-img="e-promo" data-sizes="(min-width: 1200px) 19vw, (min-width: 640px) 31vw, 92vw" alt="Egresados bailando en la pista con anteojos de colores y cotillón.">
+            <span class="afiche__texto">
+              <span class="afiche__pre">La Antonella presenta</span>
+              <span class="afiche__titulo">Egresados</span>
+            </span>
+          </a>
+          <p class="afiche__creditos">Cena de egresados · DJ · Cotillón · Robots LED · Planes en cuotas</p>
+          <a class="afiche__cta" href="#consulta" data-evento="Egresados">Consultar fecha</a>
+        </li>
+        <li class="afiche">
+          <a class="afiche__marco" href="#consulta" data-evento="Cumpleaños">
+            <img data-img="c-torta-50" data-sizes="(min-width: 1200px) 19vw, (min-width: 640px) 31vw, 92vw" alt="Mujer sonriendo con su torta de cumpleaños número 50 frente a una cortina dorada.">
+            <span class="afiche__texto">
+              <span class="afiche__pre">La Antonella presenta</span>
+              <span class="afiche__titulo">Cumpleaños</span>
+            </span>
+          </a>
+          <p class="afiche__creditos">Los 18, los 30, los 50 · Torta y velas · Brindis · Pista · Shows para sumar</p>
+          <a class="afiche__cta" href="#consulta" data-evento="Cumpleaños">Consultar fecha</a>
+        </li>
+        <li class="afiche">
+          <a class="afiche__marco" href="#consulta" data-evento="Empresa o evento social">
+            <img data-img="s-charla" data-sizes="(min-width: 1200px) 19vw, (min-width: 640px) 31vw, 92vw" alt="Invitados de traje conversando con una copa en la mano, en blanco y negro.">
+            <span class="afiche__texto">
+              <span class="afiche__pre">La Antonella presenta</span>
+              <span class="afiche__titulo">Empresas</span>
+            </span>
+          </a>
+          <p class="afiche__creditos">Reuniones · Fin de año · Presentaciones · Pantalla y proyección · Catering</p>
+          <a class="afiche__cta" href="#consulta" data-evento="Empresa o evento social">Consultar fecha</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ───────── El salón ───────── -->
+    <section class="salon seccion" id="salon" aria-labelledby="salon-titulo">
+      <div class="salon__intro">
+        <div class="salon__texto">
+          <p class="volanta">Jerónimo Luis de Cabrera 565</p>
+          <h2 class="display" id="salon-titulo" data-revelar>Un salón con historia.</h2>
+          <p class="bajada">Donde hoy está La Antonella funcionó el Cine Astral, una de las salas emblemáticas de Alta Córdoba. Del cine quedaron la escala de la sala y la boca del escenario, donde estaba la pantalla.</p>
+          <p class="bajada">Hace más de una década que esa sala se llena de fiestas.</p>
+        </div>
+        <figure class="salon__fachada">
+          <!--fachada:fachada-->
+          <figcaption>La fachada del Astral, el dibujo que La Antonella proyecta en su pantalla.</figcaption>
+        </figure>
+      </div>
+
+      <div class="espacios">
+        <article class="espacio">
+          <figure class="espacio__foto">
+            <img data-img="hall-cupula" data-sizes="(min-width: 1024px) 56vw, 100vw" alt="El hall: cúpula oval con baranda de hierro, araña de cristal y la barra de madera.">
+          </figure>
+          <div class="espacio__texto">
+            <p class="volanta">Al entrar</p>
+            <h3 class="espacio__titulo">El hall</h3>
+            <p>Cúpula oval, araña de cristal y la barra. Es lo primero que ven tus invitados al llegar, y donde se hace la recepción.</p>
+            <figure class="espacio__detalle">
+              <img data-img="hall-escalera" data-sizes="(min-width: 1024px) 26vw, 80vw" alt="Escalera con baranda de hierro forjado, junto al hall.">
+            </figure>
+          </div>
+        </article>
+        <article class="espacio espacio--invertido">
+          <figure class="espacio__foto">
+            <img data-img="sala-cena" data-sizes="(min-width: 1024px) 56vw, 100vw" alt="La sala durante una cena: mesas llenas, el balcón con pared verde y el neón de La Antonella, bolas de espejos y lluvia de luces.">
+          </figure>
+          <div class="espacio__texto">
+            <p class="volanta">Adentro</p>
+            <h3 class="espacio__titulo">La sala</h3>
+            <p>Pista central, balcón y mesas para todos. Luces LED con cortinado para la pista y climatización frío/calor.</p>
+            <p class="aforo"><span class="aforo__num">120<span aria-hidden="true">–</span><span class="sr-only"> a </span>500</span><span class="aforo__txt">invitados</span></p>
+            <figure class="espacio__detalle">
+              <img data-img="sala-violeta" data-sizes="(min-width: 1024px) 26vw, 80vw" alt="La sala iluminada de violeta, con la pista llena y el balcón al fondo.">
+            </figure>
+          </div>
+        </article>
+        <article class="espacio">
+          <figure class="espacio__foto">
+            <img data-img="escenario-boca" data-sizes="(min-width: 1024px) 56vw, 100vw" alt="La boca del escenario del viejo cine, con lluvia de luces violetas y una bola de espejos.">
+            <figcaption>La boca del escenario del Astral, en la fiesta de Egresados 2017.</figcaption>
+          </figure>
+          <div class="espacio__texto">
+            <p class="volanta">Al frente</p>
+            <h3 class="espacio__titulo">El escenario</h3>
+            <p>Donde estaba la pantalla del cine hoy pasan las entradas, el vals, los brindis y los shows. Con pantalla para proyectar tus fotos y videos.</p>
+            <figure class="espacio__detalle">
+              <img data-img="e-escenario" data-sizes="(min-width: 1024px) 26vw, 80vw" alt="Egresados reunidos en el escenario, bajo una gran bola de espejos.">
+            </figure>
+          </div>
+        </article>
+      </div>
+
+      <ul class="datos" aria-label="Comodidades del salón">
+        <li>Estacionamiento vigilado</li>
+        <li>Climatización frío/calor</li>
+        <li>Grupo electrógeno</li>
+        <li>Cobertura médica</li>
+      </ul>
+    </section>
+
+    <!-- ───────── Ambientación ───────── -->
+    <section class="ambientacion seccion" id="ambientacion" aria-labelledby="ambientacion-titulo">
+      <div class="encabezado">
+        <div>
+          <p class="volanta">Ambientación</p>
+          <h2 class="display" id="ambientacion-titulo" data-revelar>Todo listo antes de que lleguen.</h2>
+        </div>
+        <p class="bajada encabezado__lado">Decoración y centros de mesa, luces LED y cortinado para la pista, arañas de cristal, un rincón para el civil y otro para las fotos. Te asesoran para armarlo con tu estilo.</p>
+      </div>
+
+      <div class="collage">
+        <figure class="collage__item collage__item--a">
+          <img data-img="a-mesa-larga" data-sizes="(min-width: 1024px) 56vw, 100vw" alt="Mesa larga con mantel negro, camino dorado y candelabros, con el escenario y su pantalla al fondo.">
+          <figcaption>Mesa principal en negro y dorado, frente al escenario.</figcaption>
+        </figure>
+        <figure class="collage__item collage__item--b">
+          <img data-img="a-candelabro" data-sizes="(min-width: 1024px) 38vw, 100vw" alt="Mesa redonda puesta con cristalería y un candelabro dorado con flores.">
+          <figcaption>Candelabros dorados y cristalería.</figcaption>
+        </figure>
+        <figure class="collage__item collage__item--c">
+          <img data-img="a-letras-am" data-sizes="(min-width: 1024px) 19vw, 50vw" alt="Letras luminosas A y M con un corazón, rodeadas de globos, sobre el escenario.">
+          <figcaption>Iniciales con letras luminosas.</figcaption>
+        </figure>
+        <figure class="collage__item collage__item--d">
+          <img data-img="a-polaroids" data-sizes="(min-width: 1024px) 19vw, 50vw" alt="Fotos instantáneas colgadas de una guía de luces.">
+          <figcaption>Fotos colgadas con luces.</figcaption>
+        </figure>
+        <figure class="collage__item collage__item--e">
+          <img data-img="a-mesa-violeta" data-sizes="(min-width: 1024px) 34vw, 100vw" alt="Mesa con candelabro en la pista iluminada de violeta, con el neón de La Antonella al fondo.">
+          <figcaption>La pista en violeta, con el neón de fondo.</figcaption>
+        </figure>
+        <figure class="collage__item collage__item--f">
+          <img data-img="a-flores" data-sizes="(min-width: 1024px) 30vw, 50vw" alt="Centro de mesa de hortensias blancas y celestes con rosas.">
+          <figcaption>Centros de mesa con flores.</figcaption>
+        </figure>
+        <figure class="collage__item collage__item--g">
+          <img data-img="a-letras-boda" data-sizes="(min-width: 1024px) 30vw, 50vw" alt="Letras luminosas L y M con un cartel de neón que dice Nuestra boda, entre globos dorados.">
+          <figcaption>Rincón de fotos para la boda.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ───────── Gastronomía ───────── -->
+    <section class="mesa seccion" id="gastronomia" aria-labelledby="mesa-titulo">
+      <div class="mesa__carta">
+        <p class="volanta">Gastronomía</p>
+        <h2 class="display" id="mesa-titulo" data-revelar>El menú también es parte del recuerdo.</h2>
+        <dl class="carta">
+          <div class="carta__grupo">
+            <dt>Salado</dt>
+            <dd>Recepción con bocados y cena servida en la mesa. Hay varias opciones de menú para elegir la comida y la bebida que mejor van con tu evento.</dd>
+          </div>
+          <div class="carta__grupo">
+            <dt>Dulce</dt>
+            <dd>Mesa dulce con tartas de frutilla, coco, cabsha, orange, marquise y lemon pie. Torta de dos pisos y rincón de golosinas.</dd>
+          </div>
+          <div class="carta__grupo">
+            <dt>Barra</dt>
+            <dd>Bartender y barra de tragos. El brindis llega a cada mesa.</dd>
+          </div>
+        </dl>
+        <a class="enlace" href="#consulta" data-extra="Catering">Pedir presupuesto con catering</a>
+      </div>
+
+      <div class="mesa__fotos">
+        <figure class="plato plato--alto">
+          <img data-img="g-canapes" data-sizes="(min-width: 1024px) 26vw, 50vw" alt="Invitados sirviéndose bocados de una bandeja con canapés.">
+          <figcaption>Recepción</figcaption>
+        </figure>
+        <figure class="plato">
+          <img data-img="g-tarta-firma" data-sizes="(min-width: 1024px) 26vw, 50vw" alt="Tarta de chocolate con La Antonella escrito en azúcar impalpable.">
+          <figcaption>Con el sello de la casa</figcaption>
+        </figure>
+        <figure class="plato">
+          <img data-img="g-copas" data-sizes="(min-width: 1024px) 26vw, 50vw" alt="Bandeja de copas de champagne servida en el salón.">
+          <figcaption>El brindis</figcaption>
+        </figure>
+        <figure class="plato plato--alto">
+          <img data-img="g-lemon" data-sizes="(min-width: 1024px) 26vw, 50vw" alt="Lemon pie con merengue y una chocotorta detrás.">
+          <figcaption>Lemon pie</figcaption>
+        </figure>
+        <figure class="plato">
+          <img data-img="sala-mozo" data-sizes="(min-width: 1024px) 26vw, 50vw" alt="Moza sirviendo una bandeja de copas entre las mesas de la sala.">
+          <figcaption>Servicio de mozos</figcaption>
+        </figure>
+        <figure class="plato">
+          <img data-img="g-golosinas" data-sizes="(min-width: 1024px) 26vw, 50vw" alt="Mostrador de golosinas con caramelos, malvaviscos y chupetines.">
+          <figcaption>Golosinas</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ───────── Créditos: servicios ───────── -->
+    <section class="creditos seccion" id="servicios" aria-labelledby="creditos-titulo">
+      <div class="creditos__cabeza">
+        <p class="volanta">Créditos</p>
+        <h2 class="display" id="creditos-titulo" data-revelar>Todo lo que pone el salón.</h2>
+        <p class="bajada">Así detalla La Antonella su propuesta completa para una fiesta de 15. Cada presupuesto se arma a medida y sin cargo.</p>
+      </div>
+
+      <dl class="creditos__lista">
+        <div><dt>Organización</dt><dd>Organizador general</dd><dd>Recepción</dd></div>
+        <div><dt>Servicio</dt><dd>Jefe de mozos</dd><dd>Mozos</dd><dd>Bartender</dd></div>
+        <div><dt>Cocina</dt><dd>Personal de cocina</dd><dd>Vajilla, mantelería y cristalería</dd></div>
+        <div><dt>Ambientación</dt><dd>Decoración y centros de mesa</dd><dd>Sillas Royal cristal o vestidas</dd></div>
+        <div><dt>Sonido e imagen</dt><dd>DJ, con reunión previa</dd><dd>Sonido e iluminación</dd><dd>Pantalla y proyección</dd></div>
+        <div><dt>Mesa dulce</dt><dd>Tartas y lemon pie</dd><dd>Torta de dos pisos</dd></div>
+        <div><dt>Seguridad</dt><dd>Vigilancia de vehículos</dd><dd>Área con cobertura médica</dd><dd>Grupo electrógeno 85 kVA</dd></div>
+        <div><dt>Confort</dt><dd>Climatización frío/calor</dd><dd>Limpieza y mantenimiento de baños</dd></div>
+        <div class="creditos__final"><dt>Y al final</dt><dd>Servicio de fin de fiesta</dd></div>
+      </dl>
+
+      <div class="shows">
+        <div class="shows__cabeza">
+          <h3 class="shows__titulo">Para sumar a la pista</h3>
+          <p>Shows y servicios que ya pasaron por La Antonella. Consultá cuáles están disponibles para tu fecha.</p>
+        </div>
+        <ul class="shows__tira">
+          <li><figure><img data-img="show-robot" data-sizes="(min-width: 1024px) 15vw, 42vw" alt="Robot LED con casco de luces azules en la pista."><figcaption>Robots LED</figcaption></figure></li>
+          <li><figure><img data-img="show-dj" data-sizes="(min-width: 1024px) 15vw, 42vw" alt="Cabina del DJ con la consola y la pista llena de fondo."><figcaption>DJ</figcaption></figure></li>
+          <li><figure><img data-img="show-foto" data-sizes="(min-width: 1024px) 15vw, 42vw" alt="Fotógrafo con cámara y flash, en blanco y negro."><figcaption>Fotografía</figcaption></figure></li>
+          <li><figure><img data-img="show-banda" data-sizes="(min-width: 1024px) 15vw, 42vw" alt="Banda en vivo tocando batería y guitarra en la pista."><figcaption>Banda en vivo</figcaption></figure></li>
+          <li><figure><img data-img="show-magia" data-sizes="(min-width: 1024px) 15vw, 42vw" alt="Mago con galera roja y un libro en llamas, en el hall."><figcaption>Magia</figcaption></figure></li>
+          <li><figure><img data-img="hall-malabares" data-sizes="(min-width: 1024px) 15vw, 42vw" alt="Malabarista con aros y acordeonista bajo la cúpula del hall."><figcaption>Malabares</figcaption></figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────── Galería ───────── -->
+    <section class="funciones seccion" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="encabezado">
+        <div>
+          <p class="volanta">Funciones anteriores</p>
+          <h2 class="display" id="galeria-titulo" data-revelar>Así se vive una noche en La Antonella.</h2>
+        </div>
+        <div class="filtros encabezado__lado" role="group" aria-label="Filtrar fotos">
+          <button type="button" class="filtro" aria-pressed="true" data-filtro="todas">Todas</button>
+          <button type="button" class="filtro" aria-pressed="false" data-filtro="quince">15 años</button>
+          <button type="button" class="filtro" aria-pressed="false" data-filtro="boda">Casamientos</button>
+          <button type="button" class="filtro" aria-pressed="false" data-filtro="egresados">Egresados</button>
+          <button type="button" class="filtro" aria-pressed="false" data-filtro="fiesta">Cumpleaños y fiestas</button>
+        </div>
+      </div>
+
+      <div class="galeria" data-galeria>
+        <figure data-cat="quince"><button type="button" class="galeria__foto"><img data-img="q-silueta" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Silueta de una quinceañera en una puerta iluminada, en blanco y negro."></button><figcaption>15 años · 2026</figcaption></figure>
+        <figure data-cat="boda"><button type="button" class="galeria__foto"><img data-img="b-chispas" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Novios besándose en el escenario entre chispas frías."></button><figcaption>Casamiento · 2023</figcaption></figure>
+        <figure data-cat="quince"><button type="button" class="galeria__foto"><img data-img="q-chispas" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Quinceañera girando con su vestido rosa entre chispas frías y letras luminosas."></button><figcaption>15 años · 2024</figcaption></figure>
+        <figure data-cat="fiesta"><button type="button" class="galeria__foto"><img data-img="sala-pista" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="La pista llena bajo las bolas de espejos y la lluvia de luces."></button><figcaption>La pista · 2025</figcaption></figure>
+        <figure data-cat="boda"><button type="button" class="galeria__foto"><img data-img="b-vals" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Vals de los novios entre humo y papel picado."></button><figcaption>Casamiento · 2023</figcaption></figure>
+        <figure data-cat="quince"><button type="button" class="galeria__foto"><img data-img="q-padre" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Quinceañera de vestido azul entrando a la pista de la mano de su padre."></button><figcaption>15 años · 2025</figcaption></figure>
+        <figure data-cat="egresados"><button type="button" class="galeria__foto"><img data-img="e-pareja" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Pareja de egresados con copas en la sala, con el balcón y el neón al fondo."></button><figcaption>Egresados · 2026</figcaption></figure>
+        <figure data-cat="fiesta"><button type="button" class="galeria__foto"><img data-img="show-robot-chispas" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Robot LED con una bengala, junto a la boca del escenario."></button><figcaption>Show · 2026</figcaption></figure>
+        <figure data-cat="boda"><button type="button" class="galeria__foto"><img data-img="b-civil" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Novios durante el civil en el salón."></button><figcaption>Civil en el salón · 2026</figcaption></figure>
+        <figure data-cat="quince"><button type="button" class="galeria__foto"><img data-img="q-letras" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Quinceañera sentada junto a un 15 de letras luminosas."></button><figcaption>15 años · 2026</figcaption></figure>
+        <figure data-cat="fiesta"><button type="button" class="galeria__foto"><img data-img="c-globos" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Globos plateados con el número 50 sobre una mesa con torta y una cortina dorada."></button><figcaption>Cumpleaños · 2026</figcaption></figure>
+        <figure data-cat="egresados"><button type="button" class="galeria__foto"><img data-img="e-brindis" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Egresados brindando todos juntos con las copas en alto, en blanco y negro."></button><figcaption>Egresados · 2025</figcaption></figure>
+        <figure data-cat="boda"><button type="button" class="galeria__foto"><img data-img="b-entrada" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Novia entrando a la sala entre los invitados que aplauden."></button><figcaption>Casamiento · 2024</figcaption></figure>
+        <figure data-cat="quince"><button type="button" class="galeria__foto"><img data-img="q-rosa" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Quinceañera de rosa frente a una pared de lentejuelas y globos."></button><figcaption>15 años · 2025</figcaption></figure>
+        <figure data-cat="fiesta"><button type="button" class="galeria__foto"><img data-img="show-robot-abuela" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Una abuela bailando feliz con un robot LED."></button><figcaption>Show · 2026</figcaption></figure>
+        <figure data-cat="boda"><button type="button" class="galeria__foto"><img data-img="b-anillos" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Manos de los novios con sus anillos sobre un ramo de rosas."></button><figcaption>Casamiento · 2026</figcaption></figure>
+        <figure data-cat="quince"><button type="button" class="galeria__foto"><img data-img="q-hall" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Quinceañera de rosa y su padre caminando bajo la cúpula del hall."></button><figcaption>15 años · 2025</figcaption></figure>
+        <figure data-cat="egresados"><button type="button" class="galeria__foto"><img data-img="e-letras" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Egresados en el escenario detrás de letras gigantes que dicen Egresados 2022."></button><figcaption>Egresados · 2022</figcaption></figure>
+        <figure data-cat="fiesta"><button type="button" class="galeria__foto"><img data-img="c-velas" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Mujer sonriendo con su torta de cumpleaños y las velas encendidas."></button><figcaption>Cumpleaños · 2025</figcaption></figure>
+        <figure data-cat="boda"><button type="button" class="galeria__foto"><img data-img="b-fiesta" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Novios festejando con anteojos y cotillón en la pista."></button><figcaption>Casamiento · 2026</figcaption></figure>
+        <figure data-cat="quince"><button type="button" class="galeria__foto"><img data-img="q-roja" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Silueta de una quinceañera de vestido rojo en una puerta iluminada."></button><figcaption>15 años · 2024</figcaption></figure>
+        <figure data-cat="fiesta"><button type="button" class="galeria__foto"><img data-img="show-abba" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Invitado sonriendo entre dos robots LED."></button><figcaption>Show · 2026</figcaption></figure>
+        <figure data-cat="fiesta"><button type="button" class="galeria__foto"><img data-img="c-55" data-sizes="(min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw" alt="Torta de cumpleaños con velas de número 55 y frutillas."></button><figcaption>Cumpleaños · 2026</figcaption></figure>
+      </div>
+      <a class="enlace funciones__mas" href="https://www.instagram.com/laantonellaeventos/" target="_blank" rel="noopener">Más funciones en Instagram</a>
+    </section>
+
+    <!-- ───────── Consulta ───────── -->
+    <section class="consulta seccion" id="consulta" aria-labelledby="consulta-titulo">
+      <div class="consulta__intro">
+        <p class="volanta">Función privada</p>
+        <h2 class="display" id="consulta-titulo" data-revelar>Consultá tu fecha.</h2>
+        <p class="bajada">Respondé cinco preguntas y armamos el mensaje para WhatsApp. El salón te contesta con la disponibilidad y un presupuesto sin cargo.</p>
+        <div class="consulta__directo">
+          <p>¿Preferís escribir directo?</p>
+          <a href="https://wa.me/5493513263356?text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20para%20mi%20evento." target="_blank" rel="noopener">WhatsApp · +54 9 351 326-3356</a>
+          <a href="https://www.instagram.com/laantonellaeventos/" target="_blank" rel="noopener">Instagram · @laantonellaeventos</a>
+        </div>
+      </div>
+
+      <form class="boleteria" data-consulta novalidate>
+        <div class="boleteria__estado">
+          <p class="boleteria__paso" data-paso-texto aria-live="polite">Paso 1 de 5</p>
+          <ol class="boleteria__barra" aria-hidden="true">
+            <li class="is-hecho"></li><li></li><li></li><li></li><li></li>
+          </ol>
+        </div>
+
+        <!-- 1 · Evento -->
+        <fieldset class="etapa is-activa" data-etapa="0">
+          <legend class="etapa__pregunta">¿Qué vas a celebrar?</legend>
+          <div class="opciones opciones--eventos">
+            <label class="opcion"><input type="radio" name="evento" value="15 años"><span>15 años</span></label>
+            <label class="opcion"><input type="radio" name="evento" value="Casamiento"><span>Casamiento</span></label>
+            <label class="opcion"><input type="radio" name="evento" value="Egresados"><span>Egresados</span></label>
+            <label class="opcion"><input type="radio" name="evento" value="Cumpleaños"><span>Cumpleaños</span></label>
+            <label class="opcion"><input type="radio" name="evento" value="Empresa o evento social"><span>Empresa o social</span></label>
+            <label class="opcion"><input type="radio" name="evento" value="Otro"><span>Otro</span></label>
+          </div>
+          <label class="campo campo--otro" data-otro hidden>
+            <span class="campo__etiqueta">¿Qué evento?</span>
+            <input type="text" name="eventoOtro" autocomplete="off" maxlength="60" placeholder="Por ejemplo: aniversario, bautismo">
+          </label>
+          <p class="etapa__error" data-error role="alert"></p>
+        </fieldset>
+
+        <!-- 2 · Fecha -->
+        <fieldset class="etapa" data-etapa="1" hidden>
+          <legend class="etapa__pregunta">¿Para qué fecha?</legend>
+          <div class="calendario" data-calendario>
+            <div class="calendario__cabeza">
+              <button type="button" class="calendario__nav" data-cal-ant aria-label="Mes anterior">&larr;</button>
+              <p class="calendario__mes" data-cal-mes aria-live="polite"></p>
+              <button type="button" class="calendario__nav" data-cal-sig aria-label="Mes siguiente">&rarr;</button>
+            </div>
+            <div class="calendario__semana" aria-hidden="true"><span>Lu</span><span>Ma</span><span>Mi</span><span>Ju</span><span>Vi</span><span>Sá</span><span>Do</span></div>
+            <div class="calendario__dias" data-cal-dias role="grid" aria-label="Elegí un día"></div>
+          </div>
+          <label class="tilde">
+            <input type="checkbox" name="sinFecha" data-sin-fecha>
+            <span>Todavía no tengo fecha</span>
+          </label>
+          <label class="campo" data-mes-aprox hidden>
+            <span class="campo__etiqueta">¿Para cuándo, más o menos?</span>
+            <select name="mesAprox" data-mes-select></select>
+          </label>
+          <p class="etapa__nota">La disponibilidad se confirma por WhatsApp.</p>
+          <p class="etapa__error" data-error role="alert"></p>
+        </fieldset>
+
+        <!-- 3 · Invitados -->
+        <fieldset class="etapa" data-etapa="2" hidden>
+          <legend class="etapa__pregunta">¿Cuántos invitados?</legend>
+          <output class="invitados" data-invitados-num for="invitados">150</output>
+          <input class="rango" id="invitados" type="range" name="invitados" min="50" max="600" step="10" value="150" aria-label="Cantidad de invitados" data-invitados>
+          <div class="opciones opciones--chips" aria-label="Atajos">
+            <button type="button" class="chip" data-invitados-atajo="120">120</button>
+            <button type="button" class="chip" data-invitados-atajo="200">200</button>
+            <button type="button" class="chip" data-invitados-atajo="300">300</button>
+            <button type="button" class="chip" data-invitados-atajo="400">400</button>
+            <button type="button" class="chip" data-invitados-atajo="500">500</button>
+          </div>
+          <p class="etapa__nota" data-invitados-nota>El salón recibe de 120 a 500 invitados.</p>
+        </fieldset>
+
+        <!-- 4 · Observaciones -->
+        <fieldset class="etapa" data-etapa="3" hidden>
+          <legend class="etapa__pregunta">¿Qué te gustaría sumar?</legend>
+          <div class="opciones opciones--chips" data-extras>
+            <label class="chip"><input type="checkbox" name="extras" value="Catering"><span>Catering</span></label>
+            <label class="chip"><input type="checkbox" name="extras" value="Mesa dulce y torta"><span>Mesa dulce y torta</span></label>
+            <label class="chip"><input type="checkbox" name="extras" value="Barra de tragos"><span>Barra de tragos</span></label>
+            <label class="chip"><input type="checkbox" name="extras" value="DJ"><span>DJ</span></label>
+            <label class="chip"><input type="checkbox" name="extras" value="Robots LED"><span>Robots LED</span></label>
+            <label class="chip"><input type="checkbox" name="extras" value="Fotografía"><span>Fotografía</span></label>
+            <label class="chip" data-solo="Casamiento" hidden><input type="checkbox" name="extras" value="Civil en el salón"><span>Civil en el salón</span></label>
+            <label class="chip" data-solo="Egresados" hidden><input type="checkbox" name="extras" value="Planes en cuotas"><span>Planes en cuotas</span></label>
+          </div>
+          <label class="campo">
+            <span class="campo__etiqueta">Observaciones <span class="campo__opcional">(opcional)</span></span>
+            <textarea name="observaciones" rows="3" maxlength="600" placeholder="Horario, temática, algo que no quieras que falte…"></textarea>
+          </label>
+        </fieldset>
+
+        <!-- 5 · Datos -->
+        <fieldset class="etapa" data-etapa="4" hidden>
+          <legend class="etapa__pregunta">¿A nombre de quién?</legend>
+          <label class="campo">
+            <span class="campo__etiqueta">Nombre y apellido</span>
+            <input type="text" name="nombre" autocomplete="name" maxlength="80" required>
+          </label>
+          <label class="campo">
+            <span class="campo__etiqueta">Teléfono</span>
+            <input type="tel" name="telefono" autocomplete="tel" inputmode="tel" maxlength="24" placeholder="351 555 1234" required>
+          </label>
+          <label class="tilde">
+            <input type="checkbox" name="visita">
+            <span>Quiero coordinar una visita al salón</span>
+          </label>
+          <p class="etapa__error" data-error role="alert"></p>
+        </fieldset>
+
+        <!-- Resumen: la entrada -->
+        <div class="etapa etapa--entrada" data-etapa="5" hidden tabindex="-1">
+          <p class="etapa__pregunta">Tu consulta está lista.</p>
+          <div class="entrada" data-entrada>
+            <div class="entrada__cuerpo">
+              <p class="entrada__casa">La Antonella · Función privada</p>
+              <p class="entrada__evento" data-e-evento></p>
+              <dl class="entrada__datos">
+                <div><dt>Fecha</dt><dd data-e-fecha></dd></div>
+                <div><dt>Invitados</dt><dd data-e-invitados></dd></div>
+                <div><dt>A nombre de</dt><dd data-e-nombre></dd></div>
+                <div><dt>Teléfono</dt><dd data-e-telefono></dd></div>
+              </dl>
+              <p class="entrada__extras" data-e-extras></p>
+            </div>
+            <div class="entrada__talon" aria-hidden="true">
+              <span class="entrada__talon-txt">Entrada</span>
+              <span class="entrada__talon-dir">J. L. de Cabrera 565</span>
+            </div>
+          </div>
+          <p class="etapa__nota">Se abre WhatsApp con el mensaje armado. Lo podés revisar antes de enviarlo.</p>
+        </div>
+
+        <div class="boleteria__acciones">
+          <button type="button" class="btn-texto" data-volver hidden>Volver</button>
+          <button type="button" class="btn btn--oro" data-siguiente>Siguiente</button>
+          <a class="btn btn--oro btn--wa" data-enviar hidden href="https://wa.me/5493513263356" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+            Enviar por WhatsApp
+          </a>
+        </div>
+      </form>
+    </section>
+
+    <!-- ───────── Ubicación ───────── -->
+    <section class="ubicacion seccion" id="ubicacion" aria-labelledby="ubicacion-titulo">
+      <div class="ubicacion__texto">
+        <p class="volanta">Ubicación</p>
+        <h2 class="display" id="ubicacion-titulo" data-revelar>A cinco minutos del centro.</h2>
+        <address class="direccion">
+          <span class="direccion__calle">Jerónimo Luis de Cabrera 565</span>
+          <span>Alta Córdoba, Córdoba</span>
+        </address>
+        <p class="bajada">Estacionamiento con vigilancia durante todo el evento. Antes de reservar podés coordinar una visita y conocer el salón.</p>
+        <div class="ubicacion__acciones">
+          <a class="btn btn--oro" href="https://www.google.com/maps/dir/?api=1&amp;destination=Jer%C3%B3nimo%20Luis%20de%20Cabrera%20565%2C%20C%C3%B3rdoba%2C%20Argentina" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn--linea" href="https://wa.me/5493513263356?text=%C2%A1Hola!%20Quiero%20coordinar%20una%20visita%20al%20sal%C3%B3n." target="_blank" rel="noopener">Coordinar visita</a>
+        </div>
+      </div>
+      <figure class="ubicacion__fachada">
+        <img data-img="fachada-noche" data-sizes="(min-width: 1024px) 30vw, 100vw" alt="La fachada de La Antonella de noche, con el cartel iluminado y las ventanas del viejo cine.">
+        <figcaption>Así se ve de noche, con el cartel encendido.</figcaption>
+      </figure>
+      <div class="ubicacion__mapa">
+        <iframe title="Mapa: Jerónimo Luis de Cabrera 565, Alta Córdoba" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Jer%C3%B3nimo%20Luis%20de%20Cabrera%20565%2C%20C%C3%B3rdoba%2C%20Argentina&amp;z=16&amp;output=embed"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <!--fachada:pie__fachada-->
+    <svg class="pie__logo" viewBox="0 0 2230 693" role="img" aria-label="La Antonella Eventos"><use href="#logo" width="2230" height="693"></use></svg>
+    <p class="pie__lema">Un salón con historia.</p>
+    <div class="pie__datos">
+      <p>Jerónimo Luis de Cabrera 565 · Alta Córdoba</p>
+      <p><a href="https://wa.me/5493513263356" target="_blank" rel="noopener">WhatsApp +54 9 351 326-3356</a></p>
+      <p><a href="https://www.instagram.com/laantonellaeventos/" target="_blank" rel="noopener">Instagram @laantonellaeventos</a></p>
+    </div>
+    <p class="pie__letra">Fotos y videos: publicaciones de @laantonellaeventos. © <span data-anio>2026</span> La Antonella Eventos.</p>
+  </footer>
+
+  <div class="muelle" data-muelle aria-hidden="true">
+    <a class="btn btn--oro muelle__cta" href="#consulta" tabindex="-1">Consultar fecha</a>
+    <a class="muelle__wa" href="https://wa.me/5493513263356?text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20para%20mi%20evento." target="_blank" rel="noopener" tabindex="-1">
+      <span class="sr-only">Escribir por WhatsApp</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+    </a>
+  </div>
+
+  <dialog class="visor" data-visor aria-label="Foto ampliada">
+    <figure class="visor__figura">
+      <img data-visor-img alt="">
+      <figcaption data-visor-pie></figcaption>
+    </figure>
+    <button type="button" class="visor__btn visor__btn--cerrar" data-visor-cerrar><span class="sr-only">Cerrar</span>&times;</button>
+    <button type="button" class="visor__btn visor__btn--ant" data-visor-ant><span class="sr-only">Foto anterior</span>&larr;</button>
+    <button type="button" class="visor__btn visor__btn--sig" data-visor-sig><span class="sr-only">Foto siguiente</span>&rarr;</button>
+  </dialog>
+</body>
+</html>
